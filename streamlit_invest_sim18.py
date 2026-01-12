@@ -156,7 +156,7 @@ with col2:
     st.markdown("""
         <div class="feature-card">
             <h3>🔮 Simulate Scenarios</h3>
-            <p>Run thousands of simulations to see how your portfolio might grow — or survive a crash!</p>
+            <p>Run thousands of simulations to see how your portfolio might grow , or survive a crash!</p>
         </div>
     """, unsafe_allow_html=True)
 with col3:
@@ -1190,7 +1190,7 @@ with tab4:
                         st.dataframe(corr_df.round(3))
 
             if prices.empty and allow_synthetic:
-                st.warning("⚠️ No real price data available — using synthetic demo data (so backtest can run).")
+                st.warning("⚠️ No real price data available , using synthetic demo data (so backtest can run).")
                 end = datetime.today()
                 if period_arg == "5y":
                     start = end - pd.DateOffset(years=5)
@@ -1299,5 +1299,6 @@ with tab4:
                         st.warning("⚠️ Not enough data to compute backtest results. Try a longer period or check your diagnostics.")
                 else:
                     st.warning("⚠️ No returns data available for backtest.")
+
 
 st.caption(f"✨ Prototype upgraded 2025-09-20 21:20 UTC")
